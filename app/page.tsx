@@ -118,7 +118,7 @@ export default function Home() {
 
       <div
         id="skills"
-        className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 py-72 text-white"
+        className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 py-48 text-white"
       >
         <div className="text-5xl font-semibold text-white">
           My <span className="text-sky-400">Skills</span>
@@ -368,7 +368,7 @@ export default function Home() {
       </div>
       <div
         id="portfolio"
-        className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 py-72 text-white"
+        className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 py-48 text-white"
       >
         <div className="text-5xl font-semibold text-white">
           My <span className="text-sky-400">Portfolio</span>
@@ -628,7 +628,7 @@ export default function Home() {
       </div>
       <form
         id="contact"
-        className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 py-72 text-white"
+        className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 py-48 text-white"
       >
         <h1 className="text-5xl font-semibold">
           Contact <span className="text-sky-400">Me</span>
