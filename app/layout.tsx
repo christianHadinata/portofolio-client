@@ -12,8 +12,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Tokosiceha",
-  description: "E-Commerce terlengkap",
+  title: "Christian Hadinata | Web Developer",
+  description: "Christian Hadinata personal website",
 };
 
 export default function RootLayout({
