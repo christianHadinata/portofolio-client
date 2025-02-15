@@ -11,14 +11,17 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <div id="home" className="flex w-full bg-blue-950 px-44 py-72 text-white">
+      <div
+        id="home"
+        className="flex w-full items-center bg-blue-950 px-44 py-72 text-white"
+      >
         <div className="flex w-3/5 flex-col">
           <h2 className="mb-3 text-3xl font-medium">Hi, I'm</h2>
           <h1 className="mb-3 text-5xl font-semibold">Christian Hadinata</h1>
           <h2 className="mb-3 text-3xl font-medium">
             And I'm a <span className="text-sky-400">Frontend Developer</span>
           </h2>
-          <p className="pt-7">
+          <p className="pt-7 text-justify text-lg">
             I am a passionate, detail-oriented web developer who builds secure,
             scalable, and user-focused websites with modern, responsive, and
             optimized performance, ensuring accessibility, efficiency, and
@@ -70,13 +73,39 @@ export default function Home() {
           </div>
         </div>
         <div className="flex w-2/5 justify-center">
-          <div className="">
-            <img
-              src="/photo-png-version.png"
-              alt=""
-              className="h-80 w-80 rounded-full bg-[linear-gradient(180deg,_#38bdf8,_#0284c7)]"
-            />
-          </div>
+          <img
+            src="/photo-png-version.png"
+            alt=""
+            className="h-[400px] w-[400px] rounded-full bg-[linear-gradient(180deg,_#38bdf8,_#0284c7)]"
+          />
+        </div>
+      </div>
+      <div
+        id="about"
+        className="flex w-full items-center bg-blue-950 px-44 py-72 text-white"
+      >
+        <div className="flex w-2/5 justify-center">
+          <img
+            src="/photo-png-version.png"
+            alt=""
+            className="h-[480px] w-[480px] rounded-xl border-8 border-sky-400"
+          />
+        </div>
+        <div className="flex w-3/5 flex-col">
+          <h1 className="mb-3 text-5xl font-medium">
+            About <span className="text-sky-400">Me</span>
+          </h1>
+          <h2 className="mb-3 text-3xl font-medium">Frontend Developer</h2>
+          <p className="pt-7 text-justify text-lg">
+            I am a third-grade Computer Science student at UNPAR with a strong
+            passion for web development, specializing in front-end and
+            full-stack technologies. With experience in Next.js, TypeScript, and
+            Spring Boot, I build modern, scalable, and user-friendly
+            applications. I am also exploring e-commerce development, ensuring
+            secure, high-performance websites. Beyond web, I have studied
+            artificial intelligence, information security, and software
+            engineering, strengthening my problem-solving and analytical skills.
+          </p>
         </div>
       </div>
     </div>
