@@ -3,6 +3,7 @@ import "./globals.css";
 import { HeroUIProvider } from "@heroui/react";
 import { Metadata } from "next";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,10 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} `}>
+      <body className={`${poppins.className} flex min-h-screen flex-col`}>
         <HeroUIProvider>
           <Navbar />
           {children}
+          <Footer />
         </HeroUIProvider>
       </body>
     </html>
