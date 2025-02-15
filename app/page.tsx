@@ -34,7 +34,7 @@ export default function Home() {
           <div className="mt-10 flex gap-x-5">
             <Link
               href={"https://facebook.com/christian.hadinata.568"}
-              passHref={true}
+              target="blank"
               className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-sky-600 transition-all hover:scale-110"
             >
               <FontAwesomeIcon
@@ -44,6 +44,7 @@ export default function Home() {
             </Link>
             <Link
               href={"https://instagram.com/chrst_hdn"}
+              target="blank"
               className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-sky-600 transition-all hover:scale-110"
             >
               <FontAwesomeIcon
@@ -53,6 +54,7 @@ export default function Home() {
             </Link>
             <Link
               href={"https://github.com/christianHadinata"}
+              target="blank"
               className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-sky-600 transition-all hover:scale-110"
             >
               <FontAwesomeIcon
@@ -62,6 +64,7 @@ export default function Home() {
             </Link>
             <Link
               href={"https://www.linkedin.com/in/christian-hadinata-905797243/"}
+              target="blank"
               className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-sky-600 transition-all hover:scale-110"
             >
               <FontAwesomeIcon
@@ -71,7 +74,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-10 flex">
-            <button className="rounded-full bg-sky-400 px-7 py-3 text-lg font-medium shadow-md shadow-sky-600 hover:shadow-md hover:shadow-sky-400">
+            <button className="rounded-full bg-sky-400 px-7 py-3 text-lg font-medium shadow-md shadow-sky-600 hover:bg-sky-300 hover:shadow-md">
               Download CV
             </button>
           </div>
@@ -117,7 +120,9 @@ export default function Home() {
         id="skills"
         className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 py-72 text-white"
       >
-        <div className="text-5xl font-semibold text-white">My Skills </div>
+        <div className="text-5xl font-semibold text-white">
+          My <span className="text-sky-400">Skills</span>
+        </div>
         <div className="mt-20 flex flex-wrap gap-7">
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
             <img
@@ -175,6 +180,22 @@ export default function Home() {
               className="h-32 w-32 transition-all duration-150 hover:scale-110"
             />
           </a>
+          <a href="https://react.dev/">
+            <img
+              src="https://skillicons.dev/icons?i=react"
+              alt=""
+              title="React"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://vite.dev/guide/">
+            <img
+              src="https://skillicons.dev/icons?i=vite"
+              alt=""
+              title="Vite"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
           <a href="https://nextjs.org/docs">
             <img
               src="https://skillicons.dev/icons?i=next"
@@ -188,14 +209,6 @@ export default function Home() {
               src="https://skillicons.dev/icons?i=spring"
               alt=""
               title="Spring"
-              className="h-32 w-32 transition-all duration-150 hover:scale-110"
-            />
-          </a>
-          <a href="https://docs.npmjs.com/">
-            <img
-              src="https://skillicons.dev/icons?i=npm"
-              alt=""
-              title="NPM"
               className="h-32 w-32 transition-all duration-150 hover:scale-110"
             />
           </a>
@@ -239,14 +252,6 @@ export default function Home() {
               className="h-32 w-32 transition-all duration-150 hover:scale-110"
             />
           </a>
-          <a href="https://www.figma.com/">
-            <img
-              src="https://skillicons.dev/icons?i=figma"
-              alt=""
-              title="Figma"
-              className="h-32 w-32 transition-all duration-150 hover:scale-110"
-            />
-          </a>
           <a href="https://devdocs.io/c/">
             <img
               src="https://skillicons.dev/icons?i=c"
@@ -279,14 +284,6 @@ export default function Home() {
               className="h-32 w-32 transition-all duration-150 hover:scale-110"
             />
           </a>
-          <a href="https://vite.dev/guide/">
-            <img
-              src="https://skillicons.dev/icons?i=vite"
-              alt=""
-              title="Vite"
-              className="h-32 w-32 transition-all duration-150 hover:scale-110"
-            />
-          </a>
           <a href="https://docs.netlify.com/">
             <img
               src="https://skillicons.dev/icons?i=netlify"
@@ -300,6 +297,14 @@ export default function Home() {
               src="https://skillicons.dev/icons?i=vercel"
               alt=""
               title="Vercel"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://www.figma.com/">
+            <img
+              src="https://skillicons.dev/icons?i=figma"
+              alt=""
+              title="Figma"
               className="h-32 w-32 transition-all duration-150 hover:scale-110"
             />
           </a>
@@ -359,6 +364,266 @@ export default function Home() {
               className="h-32 w-32 transition-all duration-150 hover:scale-110"
             />
           </a>
+        </div>
+      </div>
+      <div
+        id="portfolio"
+        className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 py-72 text-white"
+      >
+        <div className="text-5xl font-semibold text-white">
+          My <span className="text-sky-400">Portfolio</span>
+        </div>
+        <div className="mt-20 flex w-full gap-x-10">
+          <img src="/portfolio/01-movieDB.png" alt="" className="w-3/5" />
+          <div className="flex w-2/5 flex-col justify-center">
+            <h2 className="text-3xl font-semibold">Movie DB</h2>
+            <h3 className="mt-10 text-justify text-xl font-normal">
+              The Movie DB website is a versatile platform for discovering a
+              wide range of movies, featuring release years, related content,
+              and upcoming projects. It provides detailed information on various
+              films, making it an excellent resource for movie enthusiasts and
+              researchers looking to explore and track movie timelines and
+              details.
+            </h3>
+            <h3 className="mt-5 text-xl font-normal">
+              <a
+                href="https://moviedb-ch.netlify.app/"
+                className="capitalize text-sky-400 hover:text-sky-300"
+                target="blank"
+              >
+                Movie DB On Netlify
+              </a>
+            </h3>
+
+            <h3 className="mt-5 text-justify text-xl font-normal">Tech:</h3>
+            <div className="mt-3 flex gap-x-2">
+              <img
+                src="https://skillicons.dev/icons?i=html"
+                alt=""
+                title="HTML"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=css"
+                alt=""
+                title="CSS"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=js"
+                alt=""
+                title="JavaScript"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=tailwind"
+                alt=""
+                title="Tailwind CSS"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=react"
+                alt=""
+                title="React"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=netlify"
+                alt=""
+                title="Netlify"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=postman"
+                alt=""
+                title="Postman"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=github"
+                alt=""
+                title="GitHub"
+                className="transition-all duration-150 hover:scale-110"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mt-40 flex w-full gap-x-10">
+          <div className="flex w-2/5 flex-col justify-center">
+            <h2 className="text-3xl font-semibold">Tokosiceha</h2>
+            <h3 className="mt-10 text-justify text-xl font-normal">
+              Tokosiceha is a comprehensive e-commerce platform offering a wide
+              range of categories, including fashion, groceries, electronics,
+              etc. Whether you're updating your wardrobe, upgrading your tech,
+              or anything, Tokosiceha ensures quality and convenience at your
+              fingertips. Designed for a seamless shopping experience, inspired
+              by{" "}
+              <a
+                href="https://tokopedia.com"
+                className="text-sky-400 hover:text-sky-300"
+                target="blank"
+              >
+                Tokopedia
+              </a>
+              .
+            </h3>
+
+            <h3 className="mt-10 text-justify text-xl font-normal">Tech:</h3>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <img
+                src="https://skillicons.dev/icons?i=html"
+                alt=""
+                title="HTML"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=css"
+                alt=""
+                title="CSS"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=js"
+                alt=""
+                title="JavaScript"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=ts"
+                alt=""
+                title="TypeScript"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=tailwind"
+                alt=""
+                title="Tailwind CSS"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=react"
+                alt=""
+                title="React"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=next"
+                alt=""
+                title="Next JS"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=nodejs"
+                alt=""
+                title="Node JS"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=express"
+                alt=""
+                title="Express JS"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=postgresql"
+                alt=""
+                title="PostgreSQL"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=postman"
+                alt=""
+                title="Postman"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=github"
+                alt=""
+                title="GitHub"
+                className="transition-all duration-150 hover:scale-110"
+              />
+            </div>
+          </div>
+          <img src="/portfolio/02-tokosiceha.png" alt="" className="w-3/5" />
+        </div>
+        <div className="mt-40 flex w-full gap-x-10">
+          <img src="/portfolio/03-stravibe.png" alt="" className="w-3/5" />
+          <div className="flex w-2/5 flex-col justify-center">
+            <h2 className="text-3xl font-semibold">Stravibe</h2>
+            <h3 className="mt-10 text-justify text-xl font-normal">
+              Stravibe is your ultimate running companion, designed to track and
+              enhance your running experience. With a user-friendly dashboard,
+              it helps you monitor your progress, set goals, even join races.
+              Whether you're a beginner or a seasoned runner, Stravibe empowers
+              you to run with your heart and let your journey define you,
+              inspired by{" "}
+              <a
+                href="https://strava.com"
+                target="blank"
+                className="text-sky-400 hover:text-sky-300"
+              >
+                Strava
+              </a>
+              .
+            </h3>
+            <h3 className="mt-10 text-justify text-xl font-normal">Tech:</h3>
+            <div className="mt-3 flex gap-x-2">
+              <img
+                src="https://skillicons.dev/icons?i=html"
+                alt=""
+                title="HTML"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=css"
+                alt=""
+                title="CSS"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=js"
+                alt=""
+                title="JavaScript"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=tailwind"
+                alt=""
+                title="Tailwind CSS"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=java"
+                alt=""
+                title="Java"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=spring"
+                alt=""
+                title="Spring"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=postgresql"
+                alt=""
+                title="PostgreSQL"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=postman"
+                alt=""
+                title="Postman"
+                className="transition-all duration-150 hover:scale-110"
+              />
+              <img
+                src="https://skillicons.dev/icons?i=github"
+                alt=""
+                title="GitHub"
+                className="transition-all duration-150 hover:scale-110"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
