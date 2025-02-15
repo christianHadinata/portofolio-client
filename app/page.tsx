@@ -5,6 +5,10 @@ import {
   faFacebook,
   faLinkedin,
   faGithub,
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
@@ -106,6 +110,255 @@ export default function Home() {
             artificial intelligence, information security, and software
             engineering, strengthening my problem-solving and analytical skills.
           </p>
+        </div>
+      </div>
+
+      <div
+        id="skills"
+        className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 py-72 text-white"
+      >
+        <div className="text-5xl font-semibold text-white">My Skills </div>
+        <div className="mt-20 flex flex-wrap gap-7">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+            <img
+              src="https://skillicons.dev/icons?i=html"
+              alt=""
+              title="HTML"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+            <img
+              src="https://skillicons.dev/icons?i=css"
+              alt=""
+              title="CSS"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+            <img
+              src="https://skillicons.dev/icons?i=js"
+              alt=""
+              title="JavaScript"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://www.typescriptlang.org/docs/">
+            <img
+              src="https://skillicons.dev/icons?i=ts"
+              alt=""
+              title="TypeScript"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://docs.oracle.com/en/java/">
+            <img
+              src="https://skillicons.dev/icons?i=java"
+              alt=""
+              title="Java"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://sass-lang.com/documentation/">
+            <img
+              src="https://skillicons.dev/icons?i=sass"
+              alt=""
+              title="SASS"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://v2.tailwindcss.com/docs">
+            <img
+              src="https://skillicons.dev/icons?i=tailwind"
+              alt=""
+              title="Tailwind CSS"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://nextjs.org/docs">
+            <img
+              src="https://skillicons.dev/icons?i=next"
+              alt=""
+              title="Next JS"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://docs.spring.io/spring-framework/reference/index.html">
+            <img
+              src="https://skillicons.dev/icons?i=spring"
+              alt=""
+              title="Spring"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://docs.npmjs.com/">
+            <img
+              src="https://skillicons.dev/icons?i=npm"
+              alt=""
+              title="NPM"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://nodejs.org/docs/latest/api/">
+            <img
+              src="https://skillicons.dev/icons?i=nodejs"
+              alt=""
+              title="Node JS"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://expressjs.com/">
+            <img
+              src="https://skillicons.dev/icons?i=express"
+              alt=""
+              title="Express JS"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://jestjs.io/docs/getting-started">
+            <img
+              src="https://skillicons.dev/icons?i=jest"
+              alt=""
+              title="Jest"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://www.postgresql.org/docs/">
+            <img
+              src="https://skillicons.dev/icons?i=postgresql"
+              alt=""
+              title="PostgreSQL"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://www.mongodb.com/docs/">
+            <img
+              src="https://skillicons.dev/icons?i=mongodb"
+              alt=""
+              title="MongoDB"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://www.figma.com/">
+            <img
+              src="https://skillicons.dev/icons?i=figma"
+              alt=""
+              title="Figma"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://devdocs.io/c/">
+            <img
+              src="https://skillicons.dev/icons?i=c"
+              alt=""
+              title="C"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://devdocs.io/cpp/">
+            <img
+              src="https://skillicons.dev/icons?i=cpp"
+              alt=""
+              title="C++"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://docs.python.org/3/">
+            <img
+              src="https://skillicons.dev/icons?i=python"
+              alt=""
+              title="Python"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://go.dev/doc/">
+            <img
+              src="https://skillicons.dev/icons?i=go"
+              alt=""
+              title="Go"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://vite.dev/guide/">
+            <img
+              src="https://skillicons.dev/icons?i=vite"
+              alt=""
+              title="Vite"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://docs.netlify.com/">
+            <img
+              src="https://skillicons.dev/icons?i=netlify"
+              alt=""
+              title="Netlify"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://vercel.com/docs">
+            <img
+              src="https://skillicons.dev/icons?i=vercel"
+              alt=""
+              title="Vercel"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://helpx.adobe.com/id_id/photoshop/user-guide.html">
+            <img
+              src="https://skillicons.dev/icons?i=photoshop"
+              alt=""
+              title="Adobe Photoshop"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://helpx.adobe.com/premiere-pro/user-guide.html">
+            <img
+              src="https://skillicons.dev/icons?i=premiere"
+              alt=""
+              title="Adobe Premiere Pro"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://helpx.adobe.com/after-effects/user-guide.html">
+            <img
+              src="https://skillicons.dev/icons?i=aftereffects"
+              alt=""
+              title="Adobe After Effects"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://git-scm.com/doc">
+            <img
+              src="https://skillicons.dev/icons?i=git"
+              alt=""
+              title="Git"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://docs.github.com/en">
+            <img
+              src="https://skillicons.dev/icons?i=github"
+              alt=""
+              title="GitHub"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://about.gitlab.com/">
+            <img
+              src="https://skillicons.dev/icons?i=gitlab"
+              alt=""
+              title="GitLab"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
+          <a href="https://learning.postman.com/docs/introduction/overview/">
+            <img
+              src="https://skillicons.dev/icons?i=postman"
+              alt=""
+              title="Postman"
+              className="h-32 w-32 transition-all duration-150 hover:scale-110"
+            />
+          </a>
         </div>
       </div>
     </div>
