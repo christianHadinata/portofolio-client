@@ -1,101 +1,84 @@
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faFacebook,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-8 sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="rounded bg-black/[.05] px-1 py-0.5 font-semibold dark:bg-white/[.06]">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-solid border-transparent bg-foreground px-4 text-sm text-background transition-colors hover:bg-[#383838] sm:h-12 sm:px-5 sm:text-base dark:hover:bg-[#ccc]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="flex h-10 items-center justify-center rounded-full border border-solid border-black/[.08] px-4 text-sm transition-colors hover:border-transparent hover:bg-[#f2f2f2] sm:h-12 sm:min-w-44 sm:px-5 sm:text-base dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col">
+      <div id="home" className="flex w-full bg-blue-950 px-44 py-72 text-white">
+        <div className="flex w-3/5 flex-col">
+          <h2 className="mb-3 text-3xl font-medium">Hi, I'm</h2>
+          <h1 className="mb-3 text-5xl font-semibold">Christian Hadinata</h1>
+          <h2 className="mb-3 text-3xl font-medium">
+            And I'm a <span className="text-sky-400">Frontend Developer</span>
+          </h2>
+          <p className="pt-7">
+            I am a passionate, detail-oriented web developer who builds secure,
+            scalable, and user-focused websites with modern, responsive, and
+            optimized performance, ensuring accessibility, efficiency, and
+            innovation in every project.
+          </p>
+          <div className="mt-10 flex gap-x-5">
+            <Link
+              href={"https://facebook.com/christian.hadinata.568"}
+              passHref={true}
+              className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-sky-600 transition-all hover:scale-110"
+            >
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className="h-6 w-6 text-sky-400"
+              />
+            </Link>
+            <Link
+              href={"https://instagram.com/chrst_hdn"}
+              className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-sky-600 transition-all hover:scale-110"
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="h-6 w-6 text-sky-400"
+              />
+            </Link>
+            <Link
+              href={"https://github.com/christianHadinata"}
+              className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-sky-600 transition-all hover:scale-110"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="h-6 w-6 text-sky-400"
+              />
+            </Link>
+            <Link
+              href={"https://www.linkedin.com/in/christian-hadinata-905797243/"}
+              className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-sky-600 transition-all hover:scale-110"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="h-6 w-6 text-sky-400"
+              />
+            </Link>
+          </div>
+          <div className="mt-10 flex">
+            <button className="rounded-full bg-sky-400 px-7 py-3 text-lg font-medium shadow-md shadow-sky-600 hover:shadow-md hover:shadow-sky-400">
+              Download CV
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="flex w-2/5 justify-center">
+          <div className="">
+            <img
+              src="/photo-png-version.png"
+              alt=""
+              className="h-80 w-80 rounded-full bg-[linear-gradient(180deg,_#38bdf8,_#0284c7)]"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
