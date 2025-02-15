@@ -74,7 +74,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-10 flex">
-            <button className="rounded-full bg-sky-400 px-7 py-3 text-lg font-medium shadow-md shadow-sky-600 hover:bg-sky-300 hover:shadow-md">
+            <button className="rounded-full bg-sky-400 px-7 py-3 text-lg font-medium capitalize shadow-md shadow-sky-600 hover:bg-sky-300 hover:shadow-md">
               Download CV
             </button>
           </div>
@@ -99,7 +99,7 @@ export default function Home() {
           />
         </div>
         <div className="flex w-3/5 flex-col">
-          <h1 className="mb-3 text-5xl font-medium">
+          <h1 className="mb-3 text-5xl font-semibold">
             About <span className="text-sky-400">Me</span>
           </h1>
           <h2 className="mb-3 text-3xl font-medium">Frontend Developer</h2>
@@ -626,6 +626,50 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <form
+        id="contact"
+        className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 py-72 text-white"
+      >
+        <h1 className="text-5xl font-semibold">
+          Contact <span className="text-sky-400">Me</span>
+        </h1>
+        <div className="mt-10 flex w-full flex-col items-center gap-5">
+          <div className="flex w-1/2 gap-x-5">
+            <input
+              type="text"
+              className="w-1/2 bg-blue-900 p-5"
+              placeholder="Full Name"
+            />
+            <input
+              type="email"
+              className="w-1/2 bg-blue-900 p-5"
+              placeholder="Email Address"
+            />
+          </div>
+          <div className="flex w-1/2 gap-x-5">
+            <input
+              type="tel"
+              className="w-1/2 bg-blue-900 p-5"
+              placeholder="Mobile Number"
+            />
+            <input
+              type="text"
+              className="w-1/2 bg-blue-900 p-5"
+              placeholder="Email Subject"
+            />
+          </div>
+          <textarea
+            className="h-[250px] w-1/2 resize-none bg-blue-900 p-5"
+            placeholder="Your Message"
+          />
+        </div>
+        <button
+          type="submit"
+          className="mt-10 rounded-full bg-sky-400 px-7 py-3 text-lg font-medium capitalize shadow-md shadow-sky-600 hover:bg-sky-300 hover:shadow-md"
+        >
+          Send Message
+        </button>
+      </form>
     </div>
   );
 }
