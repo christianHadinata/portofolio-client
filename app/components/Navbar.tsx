@@ -24,9 +24,7 @@ export default function Navbar() {
   return (
     <nav className="fixed z-50 w-full bg-blue-950 px-36 py-6 text-white">
       <div className="flex items-center justify-between px-8">
-        <h1 className="text-2xl font-medium capitalize">
-          Christian Portofolio
-        </h1>
+        <h1 className="text-2xl font-medium capitalize">Chris Portfolio</h1>
         <div className="flex gap-x-10">
           {links.map((link) => (
             <button
