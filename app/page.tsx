@@ -126,7 +126,9 @@ export default function Home() {
           <h1 className="mb-3 text-5xl font-semibold">
             About <span className="text-sky-400">Me</span>
           </h1>
-          <h2 className="mb-3 text-3xl font-medium">Frontend Developer</h2>
+          <h2 className="mb-3 text-3xl font-medium capitalize">
+            Christian Hadinata
+          </h2>
           <p className="pt-7 text-justify text-lg">
             I am a third-grade Computer Science student at UNPAR with a strong
             passion for web development, specializing in front-end and
