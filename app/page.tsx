@@ -107,7 +107,7 @@ export default function Home() {
               </div>
               <div className="mt-10 flex">
                 <a
-                  href="/files/CV.pdf"
+                  href="/files/Christian_Hadinata_CV.pdf"
                   download="Christian_Hadinata_CV.pdf"
                   className="rounded-full bg-sky-400 px-7 py-3 text-lg font-medium capitalize shadow-md shadow-sky-600 hover:bg-sky-300 hover:shadow-md"
                 >
