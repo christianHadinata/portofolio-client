@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,8 +13,30 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
+import Typed from "typed.js";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: [
+        "Front-end Developer",
+        "Back-end Developer",
+        "Full-stack Developer",
+      ],
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 1000,
+      loop: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <div className="flex flex-col">
       <div
@@ -23,7 +47,7 @@ export default function Home() {
           <h2 className="mb-3 text-3xl font-medium">Hi, I'm</h2>
           <h1 className="mb-3 text-5xl font-semibold">Christian Hadinata</h1>
           <h2 className="mb-3 text-3xl font-medium">
-            And I'm a <span className="text-sky-400">Frontend Developer</span>
+            And I'm a <span className="text-sky-400" ref={el}></span>
           </h2>
           <p className="pt-7 text-justify text-lg">
             I am a passionate, detail-oriented web developer who builds secure,
