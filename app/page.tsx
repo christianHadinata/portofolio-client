@@ -11,6 +11,7 @@ import {
   faCss3Alt,
   faJs,
   faReact,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import Typed from "typed.js";
@@ -62,12 +63,12 @@ export default function Home() {
               </p>
               <div className="mt-10 flex gap-x-5">
                 <Link
-                  href={"https://facebook.com/christian.hadinata.568"}
+                  href={"https://wa.me/628987848228"}
                   target="blank"
                   className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-sky-600 transition-all hover:scale-110"
                 >
                   <FontAwesomeIcon
-                    icon={faFacebook}
+                    icon={faWhatsapp}
                     className="h-6 w-6 text-sky-400"
                   />
                 </Link>
