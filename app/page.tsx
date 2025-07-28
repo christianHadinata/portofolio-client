@@ -519,10 +519,15 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="mt-40 flex w-full gap-x-10">
-              <div className="flex w-2/5 flex-col justify-center">
-                <h2 className="text-3xl font-semibold">Tokosiceha</h2>
-                <h3 className="mt-10 text-justify text-xl font-normal">
+            <div className="mt-20 flex w-full flex-col gap-10 md:flex-row md:gap-x-10">
+              <h2 className="order-1 text-3xl font-semibold md:hidden">
+                Tokosiceha
+              </h2>
+              <div className="order-3 flex w-full flex-col justify-center md:w-2/5">
+                <h2 className="hidden text-3xl font-semibold md:block">
+                  Tokosiceha
+                </h2>
+                <h3 className="text-justify text-xl font-normal md:mt-10">
                   Tokosiceha is a comprehensive e-commerce platform offering a
                   wide range of categories, including fashion, groceries,
                   electronics, etc. Whether you're updating your wardrobe,
@@ -539,95 +544,104 @@ export default function Home() {
                   .
                 </h3>
 
-                <h3 className="mt-10 text-justify text-xl font-normal">
-                  Tech:
-                </h3>
+                <h3 className="mt-5 text-justify text-xl font-normal">Tech:</h3>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <img
                     src="https://skillicons.dev/icons?i=html"
                     alt=""
                     title="HTML"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=css"
                     alt=""
                     title="CSS"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=js"
                     alt=""
                     title="JavaScript"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=ts"
                     alt=""
                     title="TypeScript"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=tailwind"
                     alt=""
                     title="Tailwind CSS"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=react"
                     alt=""
                     title="React"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=next"
                     alt=""
                     title="Next JS"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=nodejs"
                     alt=""
                     title="Node JS"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=express"
                     alt=""
                     title="Express JS"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=postgresql"
                     alt=""
                     title="PostgreSQL"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=postman"
                     alt=""
                     title="Postman"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=github"
                     alt=""
                     title="GitHub"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                 </div>
               </div>
               <img
                 src="/portfolio/02-tokosiceha.png"
                 alt=""
-                className="w-3/5"
+                className="order-2 w-full md:order-last md:w-3/5"
               />
             </div>
-            <div className="mt-40 flex w-full gap-x-10">
-              <img src="/portfolio/03-stravibe.png" alt="" className="w-3/5" />
-              <div className="flex w-2/5 flex-col justify-center">
-                <h2 className="text-3xl font-semibold">Stravibe</h2>
-                <h3 className="mt-10 text-justify text-xl font-normal">
+            <div className="mt-20 flex w-full flex-col gap-10 md:flex-row md:gap-x-10">
+              {/* Title for mobile view */}
+              <h2 className="block text-3xl font-semibold md:hidden">
+                Stravibe
+              </h2>
+              <img
+                src="/portfolio/03-stravibe.png"
+                alt=""
+                className="w-full md:w-3/5"
+              />
+              <div className="flex w-full flex-col justify-center md:w-2/5">
+                {/* Title for desktop view */}
+                <h2 className="hidden text-3xl font-semibold md:block">
+                  Stravibe
+                </h2>
+                <h3 className="text-justify text-xl font-normal md:mt-10">
                   Stravibe is your ultimate running companion, designed to track
                   and enhance your running experience. With a user-friendly
                   dashboard, it helps you monitor your progress, set goals, even
@@ -643,63 +657,61 @@ export default function Home() {
                   </a>
                   .
                 </h3>
-                <h3 className="mt-10 text-justify text-xl font-normal">
-                  Tech:
-                </h3>
-                <div className="mt-3 flex gap-x-2">
+                <h3 className="mt-5 text-justify text-xl font-normal">Tech:</h3>
+                <div className="mt-3 flex flex-wrap gap-2">
                   <img
                     src="https://skillicons.dev/icons?i=html"
                     alt=""
                     title="HTML"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=css"
                     alt=""
                     title="CSS"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=js"
                     alt=""
                     title="JavaScript"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=tailwind"
                     alt=""
                     title="Tailwind CSS"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=java"
                     alt=""
                     title="Java"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=spring"
                     alt=""
                     title="Spring"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=postgresql"
                     alt=""
                     title="PostgreSQL"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=postman"
                     alt=""
                     title="Postman"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                   <img
                     src="https://skillicons.dev/icons?i=github"
                     alt=""
                     title="GitHub"
-                    className="transition-all duration-150 hover:scale-110"
+                    className="h-12 w-12 transition-all duration-150 hover:scale-110"
                   />
                 </div>
               </div>
@@ -712,44 +724,44 @@ export default function Home() {
         <AnimatedSection id="contact" delay={0.4}>
           <form
             id="contact"
-            className="flex w-full flex-col items-center justify-center bg-blue-950 px-44 pb-52 pt-48 text-white"
+            className="flex w-full flex-col items-center justify-center bg-blue-950 px-6 pb-52 pt-24 text-white md:px-44 md:pt-48"
           >
-            <h1 className="text-5xl font-semibold">
+            <h1 className="text-center text-4xl font-semibold md:text-5xl">
               Contact <span className="text-sky-400">Me</span>
             </h1>
-            <div className="mt-10 flex w-full flex-col items-center gap-5">
-              <div className="flex w-1/2 gap-x-5">
+            <div className="mt-10 flex w-full max-w-4xl flex-col items-center gap-5">
+              <div className="flex w-full flex-col gap-y-5 md:flex-row md:gap-x-5">
                 <input
                   type="text"
-                  className="w-1/2 bg-blue-900 p-5"
+                  className="w-full bg-blue-900 p-5 md:w-1/2"
                   placeholder="Full Name"
                 />
                 <input
                   type="email"
-                  className="w-1/2 bg-blue-900 p-5"
+                  className="w-full bg-blue-900 p-5 md:w-1/2"
                   placeholder="Email Address"
                 />
               </div>
-              <div className="flex w-1/2 gap-x-5">
+              <div className="flex w-full flex-col gap-y-5 md:flex-row md:gap-x-5">
                 <input
                   type="tel"
-                  className="w-1/2 bg-blue-900 p-5"
+                  className="w-full bg-blue-900 p-5 md:w-1/2"
                   placeholder="Mobile Number"
                 />
                 <input
                   type="text"
-                  className="w-1/2 bg-blue-900 p-5"
+                  className="w-full bg-blue-900 p-5 md:w-1/2"
                   placeholder="Email Subject"
                 />
               </div>
               <textarea
-                className="h-[250px] w-1/2 resize-none bg-blue-900 p-5"
+                className="h-[250px] w-full resize-none bg-blue-900 p-5"
                 placeholder="Your Message"
               />
             </div>
             <button
               type="submit"
-              className="mt-10 rounded-full bg-sky-400 px-7 py-3 text-lg font-medium capitalize shadow-md shadow-sky-600 hover:bg-sky-300 hover:shadow-md"
+              className="mt-10 rounded-full bg-sky-400 px-4 py-2 font-medium capitalize shadow-md shadow-sky-600 hover:bg-sky-300 hover:shadow-md md:px-7 md:py-3 md:text-lg"
             >
               Send Message
             </button>
