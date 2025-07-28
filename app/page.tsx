@@ -435,7 +435,7 @@ export default function Home() {
 
             <div className="mt-20 flex w-full flex-col gap-10 md:flex-row md:gap-x-10">
               {/* Title for mobile view */}
-              <h2 className="block text-3xl font-semibold md:hidden">
+              <h2 className="block text-2xl font-semibold md:hidden md:text-3xl">
                 Movie DB
               </h2>
               <img
@@ -445,10 +445,10 @@ export default function Home() {
               />
               <div className="flex w-full flex-col justify-center md:w-2/5">
                 {/* Title for desktop view */}
-                <h2 className="hidden text-3xl font-semibold md:block">
+                <h2 className="hidden text-2xl font-semibold md:block md:text-3xl">
                   Movie DB
                 </h2>
-                <h3 className="text-justify text-xl font-normal md:mt-10">
+                <h3 className="text-justify text-lg font-normal md:mt-10 md:text-xl">
                   The Movie DB website is a versatile platform for discovering a
                   wide range of movies, featuring release years, related
                   content, and upcoming projects. It provides detailed
@@ -459,14 +459,16 @@ export default function Home() {
                 <h3 className="mt-5 text-xl font-normal">
                   <a
                     href="https://moviedb-ch.netlify.app/"
-                    className="capitalize text-sky-400 hover:text-sky-300"
+                    className="text-lg capitalize text-sky-400 hover:text-sky-300 md:text-xl"
                     target="blank"
                   >
                     Movie DB On Netlify
                   </a>
                 </h3>
 
-                <h3 className="mt-5 text-justify text-xl font-normal">Tech:</h3>
+                <h3 className="mt-5 text-justify text-lg font-normal md:text-xl">
+                  Tech:
+                </h3>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <img
                     src="https://skillicons.dev/icons?i=html"
@@ -520,14 +522,14 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-20 flex w-full flex-col gap-10 md:flex-row md:gap-x-10">
-              <h2 className="order-1 text-3xl font-semibold md:hidden">
+              <h2 className="order-1 text-2xl font-semibold md:hidden md:text-3xl">
                 Tokosiceha
               </h2>
               <div className="order-3 flex w-full flex-col justify-center md:w-2/5">
-                <h2 className="hidden text-3xl font-semibold md:block">
+                <h2 className="hidden text-2xl font-semibold md:block md:text-3xl">
                   Tokosiceha
                 </h2>
-                <h3 className="text-justify text-xl font-normal md:mt-10">
+                <h3 className="text-justify text-lg font-normal md:mt-10 md:text-xl">
                   Tokosiceha is a comprehensive e-commerce platform offering a
                   wide range of categories, including fashion, groceries,
                   electronics, etc. Whether you're updating your wardrobe,
@@ -544,7 +546,9 @@ export default function Home() {
                   .
                 </h3>
 
-                <h3 className="mt-5 text-justify text-xl font-normal">Tech:</h3>
+                <h3 className="mt-5 text-justify text-lg font-normal md:text-xl">
+                  Tech:
+                </h3>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <img
                     src="https://skillicons.dev/icons?i=html"
@@ -628,7 +632,7 @@ export default function Home() {
             </div>
             <div className="mt-20 flex w-full flex-col gap-10 md:flex-row md:gap-x-10">
               {/* Title for mobile view */}
-              <h2 className="block text-3xl font-semibold md:hidden">
+              <h2 className="block text-2xl font-semibold md:hidden md:text-3xl">
                 Stravibe
               </h2>
               <img
@@ -638,10 +642,10 @@ export default function Home() {
               />
               <div className="flex w-full flex-col justify-center md:w-2/5">
                 {/* Title for desktop view */}
-                <h2 className="hidden text-3xl font-semibold md:block">
+                <h2 className="hidden text-2xl font-semibold md:block md:text-3xl">
                   Stravibe
                 </h2>
-                <h3 className="text-justify text-xl font-normal md:mt-10">
+                <h3 className="text-justify text-lg font-normal md:mt-10 md:text-xl">
                   Stravibe is your ultimate running companion, designed to track
                   and enhance your running experience. With a user-friendly
                   dashboard, it helps you monitor your progress, set goals, even
@@ -657,7 +661,9 @@ export default function Home() {
                   </a>
                   .
                 </h3>
-                <h3 className="mt-5 text-justify text-xl font-normal">Tech:</h3>
+                <h3 className="mt-5 text-justify text-lg font-normal md:text-xl">
+                  Tech:
+                </h3>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <img
                     src="https://skillicons.dev/icons?i=html"
