@@ -96,9 +96,7 @@ export default function Home() {
                 />
               </Link>
               <Link
-                href={
-                  "https://www.linkedin.com/in/christian-hadinata-905797243/"
-                }
+                href={"https://www.linkedin.com/in/christian-hadinata/"}
                 target="blank"
                 className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-sky-600 transition-all hover:scale-110"
               >
